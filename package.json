@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "tests_chai_mocha_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js",
+    "tests": "node tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Louskil/tests_chai_mocha_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Louskil/tests_chai_mocha_1/issues"
+  },
+  "homepage": "https://github.com/Louskil/tests_chai_mocha_1#readme",
+  "devDependencies": {
+    "chai": "^6.0.1",
+    "mocha": "^11.7.2"
+  },
+  "dependencies": {
+    "mtrx": "^0.1.6"
+  }
+}
