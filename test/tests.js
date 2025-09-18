@@ -24,7 +24,6 @@ describe('Mtrx Library Basic Operations', function() {
         let matrixA, matrixB;
 
         beforeEach(function() {
-            // Створюємо матриці з конкретними значеннями
             matrixA = new Mtrx(2, 2);
             matrixA[0][0] = 1; matrixA[0][1] = 2;
             matrixA[1][0] = 3; matrixA[1][1] = 4;
@@ -90,20 +89,20 @@ describe('Mtrx Library Basic Operations', function() {
     describe('Matrix Properties', function() {
         it('should access and modify elements correctly', function() {
             const matrix = new Mtrx(2, 2);
-            const initialValue = matrix[0][1]; // Запам'ятовуємо початкове значення
+            const initialValue = matrix[0][1]; 
             
             matrix[0][0] = 10;
             matrix[1][1] = 20;
             
             expect(matrix[0][0]).to.equal(10);
             expect(matrix[1][1]).to.equal(20);
-            expect(matrix[0][1]).to.equal(initialValue); // Перевіряємо проти початкового значення
+            expect(matrix[0][1]).to.equal(initialValue); 
         });
 
         it('should initialize with random values between 0 and 1', function() {
             const matrix = new Mtrx(2, 2);
             
-            // Перевіряємо що всі значення в межах [0, 1]
+            
             for (let i = 0; i < matrix.length; i++) {
                 for (let j = 0; j < matrix[i].length; j++) {
                     expect(matrix[i][j]).to.be.at.least(0);
